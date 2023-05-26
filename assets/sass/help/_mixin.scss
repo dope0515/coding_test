@@ -1,6 +1,6 @@
 //가상 선택자 아이콘 초기값
 @mixin iconDefault($width, $height, $url, $format: "svg") {
-  $fullUrl: '/assets/images/icon/#{$url}.#{$format}';
+  $fullUrl: '../images/icon/#{$url}.#{$format}';
   content: '';
   width: $width;
   height: $height;

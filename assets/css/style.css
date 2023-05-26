@@ -129,7 +129,7 @@ legend {
   content: "";
   width: 1rem;
   height: 2rem;
-  background-image: url(/assets/images/icon/icon_arrow.svg);
+  background-image: url(../images/icon/icon_arrow.svg);
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -162,7 +162,7 @@ legend {
   content: "";
   width: 5.8rem;
   height: 5.8rem;
-  background-image: url(/assets/images/icon/icon_premium.svg);
+  background-image: url(../images/icon/icon_premium.svg);
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -376,7 +376,7 @@ footer ul li.active:nth-child(1) a::before {
   content: "";
   width: 3.5rem;
   height: 2.2rem;
-  background-image: url(/assets/images/icon/icon_omo.svg);
+  background-image: url(../images/icon/icon_omo.svg);
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -385,7 +385,7 @@ footer ul li:nth-child(1) a::before {
   content: "";
   width: 3.5rem;
   height: 2.2rem;
-  background-image: url(/assets/images/icon/icon_omo.svg);
+  background-image: url(../images/icon/icon_omo.svg);
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -394,7 +394,7 @@ footer ul li:nth-child(2) a::before {
   content: "";
   width: 3.5rem;
   height: 2.2rem;
-  background-image: url(/assets/images/icon/icon_gathering.svg);
+  background-image: url(../images/icon/icon_gathering.svg);
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -403,7 +403,7 @@ footer ul li:nth-child(3) a::before {
   content: "";
   width: 3.5rem;
   height: 2.2rem;
-  background-image: url(/assets/images/icon/icon_talk.svg);
+  background-image: url(../images/icon/icon_talk.svg);
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -412,7 +412,7 @@ footer ul li:nth-child(4) a::before {
   content: "";
   width: 3.5rem;
   height: 2.2rem;
-  background-image: url(/assets/images/icon/icon_more.svg);
+  background-image: url(../images/icon/icon_more.svg);
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
