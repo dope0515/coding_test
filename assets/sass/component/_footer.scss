@@ -21,7 +21,7 @@ footer {
                 &::before {
                     display: block;
                     margin: 0 auto;
-                    background-size: auto !important;
+                    background-size: contain !important;
                 }
                 span {
                     display: inline-block;
