@@ -1,0 +1,82 @@
+@use '../help/mixin' as *;
+footer {
+    max-width: 37.5rem;
+    width: 100%;
+    background-color: #FFFFFF;
+    border-top: 0.1rem solid #D9D9D9;
+    padding: 1rem 1.2rem;
+    box-shadow: 0px -4px 8px 0px #0000001A;
+    transform: translateX(-50%);
+    position: fixed;
+    bottom: 0;
+    left: 50%;
+    ul {
+        display: flex;
+        align-items: center;
+        li {
+            width: calc(100% / 4);
+            a {
+                display: block;
+                text-align: center;
+                &::before {
+                    display: block;
+                    margin: 0 auto;
+                    background-size: auto !important;
+                }
+                span {
+                    display: inline-block;
+                    color: #333333;
+                    margin-top: 1rem;
+                }
+            }
+            &.active {
+                a {
+                    span {
+                        color: #EF885A;
+                    }
+                }
+                //활성화 이이콘
+                &:nth-child(1) {
+                    a {
+                        &::before {
+                            @include iconDefault(3.5rem, 2.2rem, "icon_omo","svg");
+                        }
+                    }
+                }
+            }
+            
+            //오모 비활성화 아이콘
+            &:nth-child(1) {
+                a {
+                    &::before {
+                        @include iconDefault(3.5rem, 2.2rem, "icon_omo","svg");
+                    }
+                }
+            }
+            //모임비활성화 아이콘
+            &:nth-child(2) {
+                a {
+                    &::before {
+                        @include iconDefault(3.5rem, 2.2rem, "icon_gathering","svg");
+                    }
+                }
+            }
+            //톡톡 비활성화 아이콘
+            &:nth-child(3) {
+                a {
+                    &::before {
+                        @include iconDefault(3.5rem, 2.2rem, "icon_talk","svg");
+                    }
+                }
+            }
+            //더보기 비활성화 아이콘
+            &:nth-child(4) {
+                a {
+                    &::before {
+                        @include iconDefault(3.5rem, 2.2rem, "icon_more","svg");
+                    }
+                }
+            }
+        }
+    }
+}

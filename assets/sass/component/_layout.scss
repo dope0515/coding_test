@@ -1,0 +1,168 @@
+@use '../help/mixin' as *;
+
+//컨텐츠 박스 영역 타이틀
+.con-tit {
+    font-size: 3.8rem;
+    color: #EF885A;
+    a {
+        display: block;
+        font-size: 2.8rem;
+        width: 100%;
+        padding-right: 2rem;
+        position: relative;
+        &::after {
+            @include iconDefault(1rem, 2rem, "icon_arrow","svg");
+            position: absolute;
+            transform: translateY(-50%);
+            top:50%;
+            right: 0;
+        }
+    }
+    .num {
+        display: inline-block;
+        width: 3rem;
+        height: 3rem;
+        line-height: 2.8rem;
+        color: #FFFFFF;
+        text-align: center;
+        background-color: #EF885A;
+        border-radius: 50%;
+    }
+}   
+
+//리스트 wrap
+.list-wrap {
+    > ul {
+        > li {
+            margin-bottom: 3.2rem;
+            &:last-child {
+                margin-bottom: 0;
+            }
+            &.premium {
+                .img-wrap {
+                    &::after {
+                        content: '';
+                        display: block;
+                        @include iconDefault(5.8rem, 5.8rem, "icon_premium","svg");
+                        position: absolute;
+                        bottom: 0.8rem;
+                        right: 0.8rem;
+                    }
+                }
+            }
+            .con-box {
+                .img-wrap {
+                    max-width: 76.8rem;
+                    border: 0.1rem solid rgba($color: #000000, $alpha: 0.4);
+                    img {
+                        width: 100%;
+                    }
+                }
+            }
+            .discount {
+                font-size: 2.4rem;
+                font-weight: 400;
+                color: #FFFFFF;
+                text-align: center;
+                min-width: 6.7rem;
+                min-height: 5.6rem;
+                position: absolute;
+                top: 0;
+                left: 1.2rem;
+                background-image: url(../images/common/badge_bg.png);
+                background-repeat: no-repeat;
+                background-position: center center;
+                background-size: cover;
+                padding-top: 0.2rem;
+                span {
+                    font-size: 1.4rem;
+                    font-weight: 400;
+                    color: #FFFFFF;
+                }
+            }
+        }
+    }
+}
+
+//탭 리스트
+.tab-list {
+    display: flex;
+    align-items: center;
+    padding: 1.2rem 0 2.4rem;
+    // overflow: auto;
+    // 같은 컴포넌트에서 탭의 개수가 더 늘어나면 해당 css를 추가해서 스크롤이 되도록 하고 ul 태그에서 flex-wrap: wrap; 속성을 제거합니다.
+    ul {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 0.6rem;
+        width: 100%;
+        li {
+            a {
+               font-size: 1.6rem;
+               font-weight: 700;
+               line-height: 1;
+               color: #DF8358; 
+               background-color: #FFFFFF;
+               padding: 0.7rem 1.2rem 0.9rem;
+               border-radius: 1.8rem;
+               border: 0.1rem solid #CCCCCC;
+            }
+        }
+    }
+}
+
+.con-box {
+    //컨텐츠 이미지 영역
+    .img-wrap {
+        border-radius: 1rem;
+        position: relative;
+        overflow: hidden;
+        img {
+            display: block;
+            width: 100%;
+            height: auto;
+        }
+    }
+    //컨텐츠 텍스트 영역
+    .txt-wrap {
+        .tit {
+            display: inline-block;
+            font-size: 2.2rem;
+            font-weight: 400;
+            margin-top: 0.6rem;
+            @include ellipsis(2);
+        }
+        ul {
+            display: flex;
+            align-items: center;
+            margin-top: 1rem;
+            li {
+                .loc {
+                    font-size: 1.6rem;
+                    font-weight: 700;
+                    color: #888888;
+                }
+                .date {
+                    font-size: 1.6rem;
+                    font-weight: 400;
+                    color: #888888;
+                }
+                &::after {
+                    content: '';
+                    display: inline-block;
+                    width: 0.1rem;
+                    height: 1.2rem;
+                    background-color: #D9D9D9;
+                    margin: 0 0.6rem;
+                }
+                &:last-child {
+                    &::after {
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+}
+
